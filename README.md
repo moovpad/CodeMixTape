@@ -25,5 +25,6 @@ A. Code examples, as well as solutions to potential issues you might experience.
 Q. What is the status of the MOOVPAD project?
 A. The project includes several versions of the main app with some differences between them in terms of content and target users, and all of these are designed to be cross-platform. At this stage, the business-logic is progressing well, and work is continuing on the UI aspects too for each platform.
 
-All the best,
+Stay awesome.
+
 Ehsan Hamdy
