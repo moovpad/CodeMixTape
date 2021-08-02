@@ -1,5 +1,5 @@
 # REPOSITORY README
-Hopefully this intro readme file will be helpful along your Xamarin journey. Here we go...
+Hopefully this intro readme file will be helpful along our Xamarin journey. Here we go...
 
 # ADB0010 error thrown while compiling Android mobile apps in Visual Studio 2019
 This error is caused by the "Enable Fast Deployment (debug mode only)" setting that may be selected by default.
