@@ -1,16 +1,1 @@
-With work starting soon on the web API, it's a good time to briefly outline some basic data policies for the project.
-.
-1. Data collection: Wherever possible, personally identifiable data will be eliminated from any and all data collection (or minimised to the absolute necessities for safe and effective service delivery), to both help ensure user privacy and minimise server-side loads as follows.
-.
-2. Data storage: Wherever possible, only data that is essential for UX will be stored server-side.
-.
-3. Data access: MOOVPAD will not be granting access to user data to third-parties at any time, and advertising id's simply won't be used by any of our apps (this means that any external apps tracking user activity on our apps will only be doing so through the user's device.
-.
-4. Data entry: App users will be strongly encouraged to minimise the sharing of personal details through the apps.
-.
-5. Data analysis and AI: Analysis of stored data will be in keeping with the highest of ethical standards and conducted to aid in the safe and effective delivery of primary services.
-.
-6. Opt-in Model: App users will generally need to deliberately choose to opt-in to non-essential app features, rather than running features in the background and waiting for users to opt out.
-.
-Stay awesome,
-EMH
+
