@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="moovpad.Views.GitHub_Demo_01">
+    <ContentPage.Content>
+        <!-- Generally speaking, the ScrollView will be used on most screens to contain all the display elements. 
+        Note also that the VerticalScrollBarVisibility has been set to "Never", which is not the default option. -->
+        <ScrollView VerticalScrollBarVisibility="Never">
+            <StackLayout x:Name="AllStacks" Padding="5" VerticalOptions="StartAndExpand" HorizontalOptions="Center">
+                <!-- First grid is for any relevant page-internal load/clear screen methods in code behind -->
+                <Grid x:Name="NavBar" RowSpacing="5" ColumnSpacing="5" Padding="5" Margin="5" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Button x:Name="btnBack" Grid.Column ="2" Grid.Row="0" VerticalOptions="Center" Text="Back" Clicked="btnBack_Clicked"  WidthRequest="80" />
+                </Grid>
+                <Grid x:Name="TitleGrid" RowSpacing="5" ColumnSpacing="5" Padding="5" Margin="5" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label x:Name="lblMainTitle" Text="Main Title" FontSize="18" Grid.Column ="0" Grid.Row="0" Grid.ColumnSpan="3" WidthRequest="200"/>
+
+                </Grid>
+                <!-- The content grids will be 5 columns by however many rows are needed -->
+                <Grid x:Name="ProgSum" RowSpacing="5" ColumnSpacing="5" Padding="5" Margin="10" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition Width="60" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <!-- Spacer rows have been added for visual appearance, but can be removed as needed -->
+                        <RowDefinition Height="25" />
+                        <RowDefinition Height="5" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="2" />
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+                    <!-- Grid for displaying a table-style block, with the column and row labels shown -->
+                    <Label x:Name="lblSection Title" Text="Section Title" FontSize="18" Grid.Column="0" Grid.Row="0" WidthRequest="250" Grid.ColumnSpan="5" TextColor="#566E96" FontAttributes="Bold"/>
+                    <Label x:Name="lblC1" Text="C!" FontSize="24" Grid.Column="0" Grid.Row="2" WidthRequest="20" Grid.ColumnSpan="1" TextColor="#B4BED0" HorizontalOptions="Center" FontAttributes="Bold" />
+                    <Label x:Name="lblC2" Text="C2" FontSize="16" Grid.Column="2" Grid.Row="2" WidthRequest="20" Grid.ColumnSpan="1" TextColor="#B4BED0" HorizontalOptions="Center" FontAttributes="Bold" />
+                    <Label x:Name="lblC3" Text="C3" FontSize="16" Grid.Column="3" Grid.Row="2" WidthRequest="20" Grid.ColumnSpan="1" TextColor="#B4BED0" HorizontalOptions="Center" FontAttributes="Bold" />
+                    <Label x:Name="lblC4" Text="C4" FontSize="16" Grid.Column="4" Grid.Row="2" WidthRequest="20" Grid.ColumnSpan="1" TextColor="#B4BED0" HorizontalOptions="Center" FontAttributes="Bold" />
+                    <Label x:Name="lblR1" Text="R1" FontSize="13" Grid.Column="0" Grid.Row="4" WidthRequest="20" Grid.ColumnSpan="1" TextColor="#B4BED0" />
+                    <Label x:Name="lblR2" Text="R2" FontSize="13" Grid.Column="0" Grid.Row="6" WidthRequest="20" Grid.ColumnSpan="1" TextColor="#B4BED0" />
+                    <Label x:Name="lblR3" Text="R3" FontSize="13" Grid.Column="0" Grid.Row="8" WidthRequest="20" Grid.ColumnSpan="1" TextColor="#B4BED0" />
+                    <Label x:Name="lblR4" Text="R4" FontSize="13" Grid.Column="0" Grid.Row="10" WidthRequest="20" Grid.ColumnSpan="1" TextColor="#B4BED0" />
+                    <Label x:Name="lblR5" Text="R5" FontSize="13" Grid.Column="0" Grid.Row="12" WidthRequest="20" Grid.ColumnSpan="1" TextColor="#B4BED0" />
+                    <Label x:Name="lblR6" Text="R6" FontSize="13" Grid.Column="0" Grid.Row="14" WidthRequest="20" Grid.ColumnSpan="1" TextColor="#B4BED0" />
+                    <Label x:Name="lblR7" Text="R7" FontSize="13" Grid.Column="0" Grid.Row="16" WidthRequest="20" Grid.ColumnSpan="1" TextColor="#B4BED0" />
+                    <!-- Labels/controls for the table cells would be added below as needed -->
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
