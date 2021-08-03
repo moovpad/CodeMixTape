@@ -1,6 +1,9 @@
 # REPOSITORY README
 Hopefully this intro readme file will be helpful along our Xamarin journey. Here we go...
 
+# GitHub-Demo-01.xaml
+This file is a simple demo of the ScrollView and Grid implementations. Nothing fancy, just the basics (although the default ScrollViewBarVisibility property is changed from the default in this case.
+
 # ADB0010 error thrown while compiling Android mobile apps in Visual Studio 2019
 This error is caused by the "Enable Fast Deployment (debug mode only)" setting that may be selected by default.
 
