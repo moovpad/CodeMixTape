@@ -10,4 +10,4 @@ This file is a simple demo of the ScrollView and Grid implementations. Nothing f
 
 Stay awesome.
 
-Ehsan Hamdy
+EMH
