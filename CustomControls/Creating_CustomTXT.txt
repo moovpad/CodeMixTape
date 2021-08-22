@@ -1,0 +1,40 @@
+﻿THIS IS A CONTAINER THAT ACTUALLY HOLDS A NORMAL TEXTBOX
+
+1. Start by creating the UserControl item
+
+2. In the Properties for the control, set the:
+	BackColor - System Default
+	Forecolor - DimGray
+	Text Size - Increase it as needed
+	Autoscale - set to None (very important)
+	Padding - set to 7 pixels on all sides (helps keep the textbox centered in the user control)
+	Width - 250
+	Height - 30
+
+3. Add the Textbox to the control
+	Set the textbox properties:
+		Dock - Fill
+		BorderStyle - None (this keeps the textbox centered in the control)
+
+4. Code - added to the codebehind, check there for all details
+	Note: After adding the Fields, we use Right click => Quick Actions => Encapsulate and use properties... this generates the proerty functions automatically
+	*	First we add the properties
+	*	Then we add the events, STARTING WITH THE DEFAULT EVENT (AND DECLARE IT AS SUCH IN CLASS HEADER), which are exclusively for the user control 
+		(not directly for the internal textbox itself).
+	*	The alterntive woud be to expose the internal textbox events (declare their privacy as public), which would then allow us to directly use these events.
+	*	Once the Default event is added, we can then add others, like the Click event for example (or which ever events are most important to your user control in your app context)
+			-	Find the event you need for the textbox/item in the Events pane and double click it
+			-	This declares the event handler for the item in the codebehind, to which you add a call to the similar event for the user control (i.e. this.Event(e))
+	*	Other events that might be useful for UI design include KeyPress,  MouseEnter and Mouse Leave
+
+FINAL NOTES
+*	Because the control is a user control (like a form) the Default event for CustomTXT is actually the Load event, but this doesn't help us for the internal textbox events
+*	That's why we create our own custom default event (textchanged equivalent) which allows us to also expose the remaining events for the textbox.
+*	The custom control shows up in the Toolbox under App.Components
+*	The control height can't be changed since that would be harmful, but we can change the width without issues
+*	The custom properties for the control show up in the Properties under Misc
+*	When adding the Focus event methods:
+	-	We add the Enter and Leave events from the Focus section of the textbox's Events pane
+	-	Call the manually isFocused bool and then call Invalidate to re-draw the textbox/item
+	-	Modify the overridden OnPaint method by enclosing in overarching IF, to draw the normal colour if not in focus and the focused colour when the textbox/item has focus
+		(note that the penBorder.Color property needs to be changed)
