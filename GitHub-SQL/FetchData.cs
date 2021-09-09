@@ -64,7 +64,7 @@ namespace project
             return null;
         }
 		
-		public void Init(string[] obj)
+	public void Init(string[] obj)
         {
             sqlConn = new System.Data.SqlClient.SqlConnection
             {
