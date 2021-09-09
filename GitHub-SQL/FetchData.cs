@@ -63,6 +63,18 @@ namespace project
 
             return null;
         }
+		
+		public void Init(string[] obj)
+        {
+            sqlConn = new System.Data.SqlClient.SqlConnection
+            {
+                ConnectionString = Convert.ToString(obj[1]) //conString is obj[1]
+            };
+            sqlComm = new System.Data.SqlClient.SqlCommand
+            {
+                CommandText = Convert.ToString(obj[0])
+            };
+        }
 
         public string[] GetRow()
         {
