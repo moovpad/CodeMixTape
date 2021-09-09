@@ -33,7 +33,7 @@ namespace project
 
         public void GExecute()
 		{
-            cmdText = @"SELECT " + cols + " FROM[" + table + "] WHERE " + conditioncol + "='" + conditionval + "'";
+            cmdText = "INSERT into " + table;
             conString = @"data source=" + srv + "; initial catalog =" + db + "; integrated security = SSPI; persist security info=True;workstation id=" + workstation + ";packet size=4096";
             switch (TaskID)
 			{
