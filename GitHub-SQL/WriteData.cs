@@ -5,6 +5,13 @@ using System.Threading.Tasks;
 
 namespace project
 {
+	//
+        //NOTE: This class is built based on the assumptions:
+        //  1. That the necessary parameters (cols, table, conditionalcol, conditionalval, n, a, and b) are set by the calling object;
+        //  2. That windows authentication is used;
+        //  3. That the object is used on a local machine or network.
+        //
+	
 	public class WriteData
 	{
 		public string[] dbs;
